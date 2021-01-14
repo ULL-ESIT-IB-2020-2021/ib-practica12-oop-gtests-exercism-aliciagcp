@@ -5,34 +5,26 @@
 
 #include "complejo.h"
 
-Complejo::Complejo(int real, int imaginario) {
-  _real = real;
-  _imaginario = imaginario;
+
+
+int main() {
+
+  // Objeto
+  Complejo uno{1, 7};
+  Complejo dos{8, 5};
+  Complejo tres{29, 8};
+  Complejo cuatro{5, 3};
+  Complejo cinco{1, 9,};
+
+  uno.print();
+  dos.print();
+  tres.print();
+  cuatro.print();
+  cinco.print();
+
+
+  return 0;
 }
 
-int Complejo::GetReal() { return _real;}
-
-int Complejo::GetImaginario() { return _imaginario;}
-
-
-void Complejo::print() {
-std::cout << GetReal() << (GetImaginario() > 0)
-          << GetImaginario() << "i" << std::endl;
-}
-
-Complejo Complejo::Add(Complejo primero, Complejo segundo) {
-int imaginario_suma{primero.GetImaginario() + segundo.GetImaginario()};
-int real_suma{primero.GetReal() + segundo.GetReal()};
-
-Complejo numero{real_suma, imaginario_suma};
-return numero;
-}
-
-Complejo Complejo::Subtract(Complejo primero, Complejo segundo) {
-int imaginario_resta{primero.GetImaginario() - segundo.GetImaginario()};
-int real_resta{primero.GetReal() - segundo.GetReal()};
-
-Complejo numero{real_resta, imaginario_resta};
-return numero;
-}
-
+ 
+ 

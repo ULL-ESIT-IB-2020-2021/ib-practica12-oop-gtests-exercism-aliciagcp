@@ -18,9 +18,9 @@ class Fecha {
 	friend bool operator== (const Fecha &d1, const Fecha &d2);
 	friend bool operator> (const Fecha &d1, const Fecha &d2);
 
-    bool Fechas_bisiesto(int year)
+    bool Fechas_bisiesto(void)
     {
-    if(year%4 == 0) 
+    if(_year%4 == 0) 
         return true;
     else
         return false;

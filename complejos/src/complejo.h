@@ -11,8 +11,8 @@ class Complejo {
     int GetReal();
     int GetImaginario();
 
-    static Complejo Subtract(Complejo primero, Complejo segundo);
-    static Complejo Add(Complejo primero, Complejo segundo);
+    Complejo Subtract(Complejo segundo);
+    Complejo Add(Complejo segundo);
     void print();
 
    
