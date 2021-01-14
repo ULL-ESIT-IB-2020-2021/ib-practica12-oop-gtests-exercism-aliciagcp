@@ -26,6 +26,8 @@ class Fecha {
         return false;
     }
 
+    Fecha(std::string fecha);
+
     private:
     int _dia{};
     int _mes{};

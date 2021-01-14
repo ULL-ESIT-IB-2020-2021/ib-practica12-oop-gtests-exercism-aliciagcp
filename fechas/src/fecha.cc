@@ -54,3 +54,17 @@ int Fecha::GetMes() { return _mes; }
 
 int Fecha::GetYear() { return _year; }
 
+
+Fecha::Fecha(std::string fecha) {
+
+  std::string dia_string{fecha.substr(0, 2)};
+  std::string mes_string{fecha.substr(3, 2)};
+  std::string year_string{fecha.substr(6, 2)};
+
+  _dia = std::stoi(dia_string);
+  _mes = std::stoi(mes_string);
+  _year = std::stoi(year_string);
+
+
+}
+
